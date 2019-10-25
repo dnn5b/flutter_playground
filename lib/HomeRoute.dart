@@ -6,7 +6,6 @@ import 'clicks/ClickCounter.dart';
 import 'list/ListRoute.dart';
 
 class HomeRoute extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,11 +35,13 @@ class HomeRoute extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => ListRoute())); },
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => ListRoute()));
+        },
         tooltip: 'Increment',
         child: Icon(Icons.list),
       ),
     );
   }
-
 }

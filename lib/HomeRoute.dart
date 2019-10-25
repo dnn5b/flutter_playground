@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/shake/Shaker.dart';
 import 'package:hello_flutter/title/TitleWidget.dart';
 
 import 'clicks/ClickCounter.dart';
@@ -31,6 +32,7 @@ class HomeRoute extends StatelessWidget {
           children: <Widget>[
             TitleWidget(),
             ClickCounter(),
+            Shaker(),
           ],
         ),
       ),
